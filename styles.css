@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-purple: #061E3E;
+  --light-purple: #251E3E;
+  --magenta: #451E3E;
+  --pink: #651E3E;
+  --red: #851E3E; 
+}
+
+body {
+  background-color: var(--dark-purple);
+  color: white;
+  display: flex;
+  
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--magenta);
+  width: 300px;
+  height: 100vh;
+  gap: 1rem;
+}
+
+nav > ul {
+  overflow: scroll;
+}
+
+nav > ul > li {
+  background-color: var(--light-purple);
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+nav > ul > li:hover {
+  background-color: var(--red);
+}
+
+nav > div {
+  justify-content: center;
+  align-items: center;
+}
+
+nav > div > button {
+  width: 50px;
+  height: 35px;
+  margin: 1rem auto 1rem auto;
+}
+
+#generator {
+  background-color: var(--red);
+  color: white;
+}
+
+select {
+  background-color: white;
+  width: 150px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  background-color: var(--magenta);
+  margin: 15px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+  gap: 1rem;
+}
+
+p {
+  padding: .2rem .5rem .1rem .5rem;
+}
+
+img {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+}
+
+.flexRow {
+  display: flex;
+}
+
+.result {
+  display: flex;
+  width: 100px;
+  height: 35px;
+  background-color: white;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.pinkBox {
+  background-color: var(--pink);
+  display: flex;
+  width: fit-content;
+  text-align: center;
+}
+
+.dice {
+  background-color: var(--red);
+  border: none;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  color: white;
+}
+
+#diceTray {
+  display: flex;
+}
+
+.sectionTitle {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: flex;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: var(--red);
+  margin: 1rem;
+}

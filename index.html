@@ -9,50 +9,83 @@
 </head>
 <body>
   <nav>
-    <div class="logo"></div>
+    <div class="flexRow">
+      <div class="logo"></div>
+      <button>Log In</button>
+      <button>Sign Up</button>
+    </div>
     <ul>
-      <li><a href="">Random Generators</a></li>
+      <li><a href="">Dice Tray</a></li>
+      <li><a href="">Encounter Generator</a></li>
+      <li><a href="">NPC Generator</a></li>
+      <li><a href="">City Generator</a></li>
+      <li><a href="">Quest Generator</a></li>
+      <li><a href="">Name Generator</a></li>
       <li><a href="">Monster Manual</a></li>
       <li><a href="">Spells</a></li>
       <li><a href="">Equipment</a></li>
       <li><a href="">Your Collection</a></li>
+      <li><a href="">Your Collection</a></li>
+      <li><a href="">Your Collection</a></li>
+      <li><a href="">Your Collection</a></li>
+      <li><a href="">Your Collection</a></li>
+      <li><a href="">Your Collection</a></li>
     </ul>
-    <button>Log In</button>
-    <button>Sign Up</button>
+   
   </nav>
   <div class="container">
     <div>
-      <section id="diceTray">
-        <p>Dice Tray</p>
-        <button class="dice" id="d4">4</button>
-        <button class="dice" id="d6">6</button>
-        <button class="dice" id="d8">8</button>
-        <button class="dice" id="d12">12</button>
-        <button class="dice" id="d20">20</button>
-        <p id="diceResult">20</p>
+      <section id="diceTray" class="visible">
+        <p class="sectionTitle">Dice Tray</p>
+        <div class="flexRow">
+          <div class="pinkBox">
+            <button class="dice" id="d4">4</button>
+            <button class="dice" id="d6">6</button>
+            <button class="dice" id="d8">8</button>
+            <button class="dice" id="d12">12</button>
+            <button class="dice" id="d20">20</button>
+          </div>
+          <p id="diceResult" class="result">20</p>
+        </div>
       </section>
-      <section id="encounterGenerator">
-        <p>Encounter Generator</p>
-        <select name="" id="">
-          <option value="">Easy</option>
-          <option value="">Medium</option>
-          <option value="">Hard</option>
-        </select>
-        <button class="generator">Generate</button>
-        <img src="" alt="">
-        <p id="monsterName">Monster Name</p>
-        <p id="monsterDescription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur distinctio expedita, similique ea cum, nobis dolores quidem iste dolorum adipisci debitis rerum atque quos amet laudantium! Aspernatur dicta quo quos.</p>
-        <div>
-          <p>Level 1/2</p>
-          <p id="level1or2">2</p>
-          <p>Level 3/4</p>
-          <p id="level3or4">4</p>
-          <p>Level 5/6</p>
-          <p id="level5or6">7</p>
-          <p>Level 7/8</p>
-          <p id="level7or8">12</p>
-          <p>Level 9+</p>
-          <p id="level9plus">15</p>
+      <section id="encounterGenerator" class="hidden">
+        <p class="sectionTitle">Encounter Generator</p>
+        <div class="flexRow">
+          <select name="" id="">
+            <option value="">Easy</option>
+            <option value="">Medium</option>
+            <option value="">Hard</option>
+          </select>
+          <button class="generator">Generate</button>
+        </div>
+        <div class="flexRow">
+          <img src="" alt="">
+          <div>
+            <p id="monsterName">Monster Name</p>
+            <p id="monsterDescription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur distinctio expedita, similique ea cum, nobis dolores quidem iste dolorum adipisci debitis rerum atque quos amet laudantium! Aspernatur dicta quo quos.</p>
+          </div>
+        </div>
+        <div class="pinkBox">
+          <div>
+            <p>Level 1/2</p>
+            <p id="level1or2" class="result">2</p>
+          </div>
+          <div>
+            <p>Level 3/4</p>
+          <p id="level3or4" class="result">4</p>
+          </div>
+          <div>
+            <p>Level 5/6</p>
+            <p id="level5or6" class="result">7</p>
+          </div>
+          <div>
+            <p>Level 7/8</p>
+          <p id="level7or8" class="result">12</p>
+          </div>
+          <div>
+            <p>Level 9+</p>
+            <p id="level9plus" class="result">15</p>
+          </div>
         </div>
         <ul>
           <li>150 gold pieces</li>
@@ -60,19 +93,19 @@
           <li>Sack of bread and apples</li>
         </ul>
       </section>
-      <section id="nameGenerator">
-        <p>Name Generator</p>
+      <section id="nameGenerator" class="hidden">
+        <p class="sectionTitle">Name Generator</p>
         <select>
           <option value="character">Character</option>
           <option value="city">City</option>
           <option value="item">Item</option>
         </select>
         <button class="generator">Generate</button>
-        <p>Output Name</p>
+        <p class="result">Output Name</p>
       </section>
     </div>
-    <section id="npcGenerator">
-      <p>NPC Generator</p>
+    <section id="npcGenerator" class="hidden">
+      <p class="sectionTitle">NPC Generator</p>
       <select name="" id="">
         <option value="">Adult Male</option>
         <option value="">Adult Female</option>
@@ -86,13 +119,13 @@
       <p>NPC Name</p>
       <p>Summary of NPC</p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia obcaecati explicabo rem similique eos aliquam! Ad assumenda dolor iste architecto consequatur? Saepe nisi ab dolore porro ipsa facilis culpa neque?</p>
-      <div>
-        <p>Jovial</p>
-        <p>Eager</p>
-        <p>Has a Secret</p>
-        <p>Needs Help</p>
-        <p>Friendly</p>
-        <p>Wealthy</p>
+      <div class="pinkBox">
+        <p class="result">Jovial</p>
+        <p class="result">Eager</p>
+        <p class="result">Has a Secret</p>
+        <p class="result">Needs Help</p>
+        <p class="result">Friendly</p>
+        <p class="result">Wealthy</p>
       </div>
       <ul>
         <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto.</li>
@@ -102,8 +135,8 @@
       <img src="" alt="">
       <button class="addToProfile"></button>
     </section>
-    <section id="cityGenerator">
-      <p>City Generator</p>
+    <section id="cityGenerator" class="hidden">
+      <p class="sectionTitle">City Generator</p>
       <select name="" id="">
         <option value="">Large Metropolis</option>
         <option value="">Medium City</option>
@@ -122,6 +155,18 @@
         <li>Repellendus earum repudiandae sint aperiam rerum nisi omnis quod facere labore.</li>
       </ul>
       <button class="addToProfile"></button>
+    </section>
+    <section id="monsterManual" class="hidden">
+      <p class="sectionTitle">Monster Manual</p>
+    </section>
+    <section id="spellBook" class="hidden">
+      <p class="sectionTitle">Spell Book</p>
+    </section>
+    <section id="equipment" class="hidden">
+      <p class="sectionTitle">Equipment</p>
+    </section>
+    <section id="journal" class="hidden">
+      <p class="sectionTitle">Your Journal</p>
     </section>
   </div>
 </body>
